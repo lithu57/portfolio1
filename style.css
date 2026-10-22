@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7ff;
+    color: #172554;
+    line-height: 1.7;
+}
+
+a {
+    transition: 0.3s;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #93c5fd;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* Home Section */
+.home {
+    min-height: 420px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 75px 7%;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.home-image {
+    order: 2;
+    flex: 0 0 300px;
+    width: 300px;
+    margin-left: auto;
+}
+
+.home-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.home-content {
+    order: 1;
+    flex: 1 1 auto;
+    max-width: 750px;
+    min-width: 0;
+}
+
+.welcome {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.home h1 {
+    font-size: 46px;
+    margin: 10px 0;
+}
+
+.home h1 span {
+    color: #2563eb;
+}
+
+.home h2 {
+    font-size: 25px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.home-content > p:not(.welcome) {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #172554;
+    transform: translateY(-3px);
+}
+
+/* Common Sections */
+section {
+    padding: 60px 7%;
+    scroll-margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #eff6ff;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: white;
+    color: #1d4ed8;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    padding: 14px 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px #1725540d;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background-color: #2563eb;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Education and Internship */
+.info-card {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px #1725540d;
+}
+
+.info-card h2 {
+    margin: 12px 0;
+    font-size: 23px;
+}
+
+.info-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    margin: 8px 0;
+}
+
+.tag {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.internship-section {
+    background-color: #eff6ff;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #f5f7ff;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    display: block;
+    background-color: white;
+    padding: 28px;
+    border: 1px solid #dbeafe;
+    border-radius: 15px;
+    color: #172554;
+    text-decoration: none;
+    box-shadow: 0 5px 18px #17255410;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #60a5fa;
+    box-shadow: 0 14px 28px #2563eb20;
+}
+
+.project-number {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.project-card h2 {
+    font-size: 22px;
+    margin: 18px 0 12px;
+}
+
+.project-card p {
+    color: #64748b;
+    margin-bottom: 22px;
+}
+
+.project-link {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Project Detail Sections */
+.details {
+    display: none;
+    width: 86%;
+    max-width: 1000px;
+    margin: 35px auto;
+    background-color: white;
+    border: 1px solid #dbeafe;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #17255412;
+}
+
+.details:target {
+    display: block;
+    animation: appear 0.4s ease;
+}
+
+.back {
+    display: inline-block;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+.details h1 {
+    font-size: 34px;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.details h3 {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.details h2 {
+    font-size: 21px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.details p {
+    color: #475569;
+}
+
+.details ul {
+    padding-left: 25px;
+    color: #475569;
+}
+
+.details li {
+    padding: 4px 0;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    background-color: #dbeafe;
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+
+.contact-section a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Tablet Screens */
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+    .home {
+        min-height: auto;
+        padding: 60px 6%;
+        gap: 30px;
+    }
+
+    .home-image {
+        flex: 0 0 240px;
+        width: 240px;
+    }
+
+    .home-image img {
+        width: 100%;
+    }
+
+    .home h1 {
+        font-size: 36px;
+    }
+
+    .home h2 {
+        font-size: 22px;
+    }
+
+    .project-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .details {
+        width: 90%;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 45px 5%;
+        gap: 28px;
+    }
+
+    .home-image {
+        order: 1;
+        flex: 0 0 auto;
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .home-content {
+        order: 2;
+        width: 100%;
+    }
+
+    .home-content > p:not(.welcome) {
+        margin-bottom: 22px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home h2 {
+        font-size: 19px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 23px;
+    }
+
+    .info-card {
+        padding: 22px;
+    }
+
+    .details {
+        width: 100%;
+        padding: 22px;
+        margin: 20px auto;
+    }
+
+    .details h1 {
+        font-size: 27px;
+    }
+
+    .details h2 {
+        font-size: 19px;
+    }
+}
+made change profile pic in right side the profile inside the circle cover without the border color and gave the entire code
